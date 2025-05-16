@@ -1,0 +1,116 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          50: '#E6F1F4',
+          100: '#CCDEE3',
+          200: '#99BDC7',
+          300: '#669CAB',
+          400: '#337B8F',
+          500: '#2D6E7E', // Primary
+          600: '#245A68',
+          700: '#1C4752',
+          800: '#13333C',
+          900: '#091A1E',
+        },
+        secondary: {
+          50: '#F0F7FC',
+          100: '#E1EFF9',
+          200: '#C4DFF3',
+          300: '#A4C8E1', // Secondary
+          400: '#87B6D6',
+          500: '#6AA4CB',
+          600: '#4B8BB8',
+          700: '#3A709A',
+          800: '#2D5777',
+          900: '#1F3C53',
+        },
+        accent: {
+          50: '#FAF5EF',
+          100: '#F5EBDF',
+          200: '#EBD8BF',
+          300: '#E1C49F',
+          400: '#D2B48C', // Accent
+          500: '#C6A36F',
+          600: '#B89255',
+          700: '#9C7A47',
+          800: '#7D6239',
+          900: '#5F4A2B',
+        },
+        success: {
+          50: '#E6F5EF',
+          100: '#CCEADF',
+          200: '#99D5BF',
+          300: '#66C09F',
+          400: '#33AB7F',
+          500: '#2A8E69',
+          600: '#227254',
+          700: '#1A553F',
+          800: '#11392A',
+          900: '#091C15',
+        },
+        warning: {
+          50: '#FFF7E6',
+          100: '#FFEECC',
+          200: '#FFDD99',
+          300: '#FFCC66',
+          400: '#FFBB33',
+          500: '#FFA500',
+          600: '#D48C00',
+          700: '#A36B00',
+          800: '#734C00',
+          900: '#422C00',
+        },
+        error: {
+          50: '#FDEAEA',
+          100: '#FBD5D5',
+          200: '#F7ABAB',
+          300: '#F48181',
+          400: '#F05757',
+          500: '#EC2D2D',
+          600: '#D41A1A',
+          700: '#A31414',
+          800: '#730E0E',
+          900: '#420808',
+        },
+        neutral: {
+          50: '#F7F7F7',
+          100: '#E6E6E6',
+          200: '#CCCCCC',
+          300: '#B3B3B3',
+          400: '#999999',
+          500: '#808080',
+          600: '#666666',
+          700: '#4D4D4D',
+          800: '#333333',
+          900: '#1A1A1A',
+        },
+      },
+      boxShadow: {
+        'card': '0 2px 10px rgba(0, 0, 0, 0.05)',
+        'card-hover': '0 4px 20px rgba(0, 0, 0, 0.1)',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-out',
+        slideUp: 'slideUp 0.5s ease-out',
+      },
+    },
+  },
+  plugins: [],
+};
